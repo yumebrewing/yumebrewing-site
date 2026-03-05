@@ -33,13 +33,42 @@
 
   <main>
     <section class="section section-alt" id="trade">
-      <div class="container section-narrow">
+      <div class="container">
         <h2>Trade</h2>
         <p>
           Planning to stock Yume? Tell us about your venue and volume needs, and
           we will share trade pricing, launch allocation, and onboarding details.
         </p>
-        <a class="cta section-cta" href="mailto:yumebrewingco@gmail.com?subject=Trade%20Enquiry">Contact Trade Team</a>
+        <div class="trade-layout">
+          <aside class="offer-box trade-offer" aria-label="Launch partner offer">
+            <h3>Launch Partner Offer</h3>
+            <ul class="quick-facts">
+              <li>1 free case</li>
+              <li>2nd case at cost</li>
+              <li>standard wholesale pricing thereafter</li>
+            </ul>
+            <ul class="trade-points">
+              <li>limited pilot batch</li>
+              <li>first venues get priority allocation</li>
+            </ul>
+          </aside>
+
+          <form class="trade-form" action="#" method="post">
+            <label for="trade-name">Name</label>
+            <input id="trade-name" name="name" type="text" required />
+
+            <label for="trade-venue">Venue</label>
+            <input id="trade-venue" name="venue" type="text" required />
+
+            <label for="trade-email">Email</label>
+            <input id="trade-email" name="email" type="email" required />
+
+            <label for="trade-message">Message</label>
+            <textarea id="trade-message" name="message" rows="4"></textarea>
+
+            <button class="cta section-cta" type="submit">Send Trade Enquiry</button>
+          </form>
+        </div>
       </div>
     </section>
 

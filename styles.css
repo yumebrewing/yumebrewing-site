@@ -192,6 +192,61 @@ img {
   max-width: 760px;
 }
 
+.trade-layout {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1rem, 2.8vw, 2rem);
+  align-items: start;
+}
+
+.trade-offer {
+  height: 100%;
+}
+
+.trade-points {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.45rem;
+  color: #2b2b2b;
+  font-size: clamp(0.95rem, 1.2vw, 1rem);
+}
+
+.trade-form {
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 14px;
+  background: #fff;
+  padding: clamp(1rem, 2.2vw, 1.4rem);
+  display: grid;
+  gap: 0.6rem;
+}
+
+.trade-form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.trade-form input,
+.trade-form textarea {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #fff;
+  font: inherit;
+  padding: 0.65rem 0.75rem;
+  color: #111;
+}
+
+.trade-form textarea {
+  resize: vertical;
+}
+
+.trade-form .section-cta {
+  margin-top: 0.5rem;
+}
+
 .site-footer {
   padding-block: 2rem 2.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -313,7 +368,8 @@ img {
   }
 
   .two-col,
-  .footer-grid {
+  .footer-grid,
+  .trade-layout {
     grid-template-columns: 1fr;
   }
 
