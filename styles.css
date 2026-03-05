@@ -107,17 +107,25 @@ img {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: auto;
-    padding-block: clamp(4rem, 14vw, 5.5rem) clamp(1.75rem, 6vw, 2.5rem);
-    background-position: center;
+    height: auto;
+    min-height: 78vh;
+    padding-block: 2.75rem 1.75rem;
+    background-position: center top;
   }
 
   .hero-content {
+    margin-top: 0;
     max-width: 38rem;
+    width: 92vw;
   }
 
   .hero p {
     margin-bottom: 1.35rem;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
 
