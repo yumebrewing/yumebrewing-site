@@ -113,13 +113,26 @@ img {
   }
 
   .hero-content {
-    margin-top: 0;
+    margin-top: clamp(1.75rem, 6vh, 3.25rem);
+    padding-top: 0.5rem;
     max-width: 38rem;
     width: 92vw;
   }
 
+  .hero-content img,
+  .hero-content .logo,
+  .hero-content .logo img {
+    display: block;
+    margin: 0 auto 0.6rem;
+    max-width: min(56vw, 220px);
+  }
+
   .hero p {
     margin-bottom: 1.35rem;
+  }
+
+  .hero .cta {
+    margin-top: 0.65rem;
   }
 
   html,
