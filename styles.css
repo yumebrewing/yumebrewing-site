@@ -106,7 +106,7 @@ img {
 
 .hero h1 {
   margin: 0 0 0.5rem;
-  font-size: clamp(2rem, 4.8vw, 3.625rem);
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
   line-height: 1.1;
   font-weight: 700;
   text-shadow: 0 2px 10px rgba(255, 255, 255, 0.35);
@@ -114,14 +114,14 @@ img {
 
 .hero h2 {
   margin: 0 0 0.95rem;
-  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  font-size: clamp(1.2rem, 2.25vw, 1.85rem);
   line-height: 1.2;
   font-weight: 600;
 }
 
 .hero p {
   margin: 0 0 1.5rem;
-  font-size: clamp(1rem, 1.45vw, 1.15rem);
+  font-size: clamp(0.98rem, 1.28vw, 1.12rem);
   line-height: 1.5;
   color: #1e1e1e;
 }
@@ -217,6 +217,47 @@ img {
 #about,
 #contact {
   scroll-margin-top: 5.5rem;
+}
+
+@media (max-width: 1100px) {
+  .hero {
+    height: auto;
+    min-height: 92svh;
+    padding-block: clamp(3.5rem, 7.5vh, 5rem) clamp(1.5rem, 3.6vh, 2.5rem);
+    background-position: center top;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    max-width: min(88vw, 44rem);
+  }
+
+  .hero h1 {
+    font-size: clamp(1.85rem, 3.4vw, 3rem);
+  }
+
+  .hero h2 {
+    font-size: clamp(1.12rem, 1.9vw, 1.55rem);
+  }
+
+  .hero p {
+    font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  }
+
+  .hero-content img,
+  .hero .cans,
+  .hero .can-image {
+    width: 100%;
+    max-width: min(42vw, 320px);
+    height: auto;
+    object-fit: contain;
+    margin-inline: auto;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width: 768px) {
