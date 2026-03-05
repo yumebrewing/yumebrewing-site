@@ -9,6 +9,7 @@ body {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -212,6 +213,7 @@ img {
   color: #111;
 }
 
+#trade,
 #beer,
 #stock,
 #about,
