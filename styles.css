@@ -1,40 +1,44 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #111;
-}
+body { margin: 0; font-family: Arial, sans-serif; color: #111; }
 
-.hero {
+.hero{
   height: 100vh;
   background-image: url("images/yume-hero.jpg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
   padding: 24px;
 }
 
-.hero-content {
+.hero-content{
   backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255,255,255,0.65);
   padding: 40px 32px;
   border-radius: 14px;
   max-width: 680px;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin: 0 0 10px;
+.hero h1{ font-size: 48px; margin: 0 0 10px; }
+.hero h2{ font-size: 26px; margin: 0 0 18px; font-weight: 600; }
+.hero p{ font-size: 18px; margin: 0 0 26px; line-height: 1.4; color: #222; }
+
+.cta{
+  display:inline-block;
+  background:#000;
+  color:#fff;
+  padding: 14px 26px;
+  border-radius: 10px;
+  text-decoration:none;
+  font-weight:700;
 }
 
-.hero h2 {
-  font-size: 26px;
-  margin: 0 0 18px;
-  font-weight: 600;
+@media (max-width:768px){
+  .hero h1{ font-size: 36px; }
+  .hero h2{ font-size: 22px; }
+  .hero p{ font-size: 16px; }
 }
-
 .hero p {
   font-size: 18px;
   margin: 0 0 26px;
