@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yume Brewing Co. | Thank You</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="age-locked">
+  <div id="site-content" inert>
+    <header class="top-nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">Yume Brewing Co.</a>
+        <nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="beer.html">The Beer</a>
+          <a href="trade.html">Trade</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container section-narrow">
+          <p class="page-kicker">Trade Enquiries</p>
+          <h1>Thank You</h1>
+          <p>Thank you for your enquiry, someone will get back to you shortly.</p>
+          <a class="cta" href="trade.html">Back to Trade</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <p><strong>Yume Brewing Co.</strong></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/yumebrewery" target="_blank" rel="noopener noreferrer">@yumebrewingco</a></p>
+        <p><strong>Email:</strong> <a href="mailto:yumebrewingco@gmail.com">yumebrewingco@gmail.com</a></p>
+        <p><strong>Location:</strong> Cape Town, South Africa</p>
+      </div>
+    </footer>
+  </div>
+
+  <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
+    <div class="age-gate-card">
+      <p class="age-gate-eyebrow">Age Verification</p>
+      <h2 id="age-gate-title">Please confirm your age</h2>
+      <p class="age-gate-copy">You must be 18 or older to access this website.</p>
+
+      <form id="age-gate-form" class="age-gate-form" novalidate>
+        <label for="birth-month">Birth month</label>
+        <select id="birth-month" name="birth-month" required>
+          <option value="">Select month</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+
+        <label for="birth-year">Birth year</label>
+        <input id="birth-year" name="birth-year" type="number" inputmode="numeric" min="1900" required />
+
+        <label class="remember-row" for="remember-age">
+          <input id="remember-age" name="remember-age" type="checkbox" />
+          <span>Remember me on this device</span>
+        </label>
+
+        <button class="cta age-gate-submit" type="submit">Enter Site</button>
+        <p id="age-gate-message" class="age-gate-message" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var key = "yumeAgeVerified";
+      var body = document.body;
+      var gate = document.getElementById("age-gate");
+      var siteContent = document.getElementById("site-content");
+      var form = document.getElementById("age-gate-form");
+      var monthInput = document.getElementById("birth-month");
+      var yearInput = document.getElementById("birth-year");
+      var rememberInput = document.getElementById("remember-age");
+      var message = document.getElementById("age-gate-message");
+      var now = new Date();
+      var currentYear = now.getFullYear();
+      var currentMonth = now.getMonth() + 1;
+
+      yearInput.max = String(currentYear);
+
+      function lockSite() {
+        body.classList.add("age-locked");
+        body.classList.remove("site-ready");
+        siteContent.setAttribute("inert", "");
+        gate.classList.remove("age-gate-hidden");
+      }
+
+      function unlockSite() {
+        body.classList.remove("age-locked");
+        siteContent.removeAttribute("inert");
+        gate.classList.add("age-gate-hidden");
+        window.requestAnimationFrame(function () {
+          body.classList.add("site-ready");
+        });
+      }
+
+      function isAdult(month, year) {
+        var years = currentYear - year;
+        if (years > 18) return true;
+        if (years < 18) return false;
+        return currentMonth >= month;
+      }
+
+      try {
+        if (localStorage.getItem(key) === "true") {
+          unlockSite();
+          return;
+        }
+      } catch (error) {
+        lockSite();
+      }
+
+      lockSite();
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var month = Number(monthInput.value);
+        var year = Number(yearInput.value);
+
+        if (!month || !year || year < 1900 || year > currentYear) {
+          message.textContent = "Please enter a valid birth month and birth year.";
+          return;
+        }
+
+        if (isAdult(month, year)) {
+          if (rememberInput.checked) {
+            try {
+              localStorage.setItem(key, "true");
+            } catch (error) {
+            }
+          }
+          unlockSite();
+          return;
+        }
+
+        message.textContent = "You must be 18 or older to enter this site.";
+      });
+    })();
+  </script>
+</body>
+</html>

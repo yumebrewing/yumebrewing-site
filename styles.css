@@ -652,6 +652,15 @@ main > .section:nth-of-type(3n) .trade-points {
   margin-top: 1.6rem;
 }
 
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .trade-form-status {
   margin: 0.85rem 0 0;
   min-height: 1.4rem;

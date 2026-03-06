@@ -80,7 +80,8 @@
             <input type="hidden" name="_subject" value="New Yume Trade Enquiry" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_next" value="trade.html#trade-pricing" />
+            <input id="trade-next-url" type="hidden" name="_next" value="thank-you.html" />
+            <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" />
             <div class="trade-form-grid">
               <div class="field-group">
                 <label for="trade-venue-name">Venue Name</label>
@@ -330,6 +331,12 @@
         var endpoint = action.indexOf("formsubmit.co/") > -1
           ? action.replace("formsubmit.co/", "formsubmit.co/ajax/")
           : action;
+        var nextInput = document.getElementById("trade-next-url");
+        var nextUrl = nextInput
+          ? new URL(nextInput.value, window.location.href).href
+          : new URL("thank-you.html", window.location.href).href;
+
+        formData.set("_next", nextUrl);
 
         fetch(endpoint, {
           method: (form.getAttribute("method") || "POST").toUpperCase(),
@@ -345,8 +352,7 @@
             return response.json();
           })
           .then(function () {
-            form.reset();
-            setStatus("is-success", "Thank you for your enquiry, someone will get back to you shortly.");
+            window.location.href = nextUrl;
           })
           .catch(function () {
             setStatus("is-error", "Sorry, something went wrong. Please try again or email us directly at yumebrewingco@gmail.com.");
