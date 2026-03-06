@@ -701,7 +701,7 @@ body.site-ready .hero-content .hero-cta {
     height: auto;
     min-height: 100svh;
     background-size: cover;
-    background-position: center top;
+    background-position: center calc(50% + var(--hero-parallax-offset, 0px));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -711,7 +711,7 @@ body.site-ready .hero-content .hero-cta {
 
   .beer-hero {
     min-height: 60vh;
-    background-position: center;
+    background-position: center calc(50% + var(--beer-hero-parallax-offset, 0px));
   }
 
   .hero-content {
