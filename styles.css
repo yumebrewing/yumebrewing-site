@@ -172,7 +172,8 @@ img {
   font-size: clamp(1.2rem, 2.25vw, 1.85rem);
   line-height: 1.2;
   font-weight: 600;
-  color: var(--text-soft);
+  color: #efe4d4;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.38);
 }
 
 .hero p,
@@ -180,7 +181,8 @@ img {
   margin-bottom: 1.5rem;
   font-size: clamp(0.98rem, 1.28vw, 1.12rem);
   line-height: 1.5;
-  color: #e8ecec;
+  color: #f1e7d8;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.34);
 }
 
 body:not(.site-ready) .hero {
@@ -311,7 +313,8 @@ body.site-ready .hero-content .hero-cta {
   font-size: clamp(1.05rem, 1.8vw, 1.35rem);
   line-height: 1.4;
   font-weight: 600;
-  color: var(--text-soft);
+  color: #efe3d3;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.36);
 }
 
 .section {
