@@ -734,7 +734,8 @@ body.site-ready .hero-content .hero-cta {
     margin-right: auto;
   }
 
-  .section-cta {
+  .section-cta,
+  .content-placeholder .cta {
     margin-top: 1.5rem;
   }
 
