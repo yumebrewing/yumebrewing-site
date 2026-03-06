@@ -445,6 +445,10 @@ main > .section:nth-of-type(3n) .trade-points {
   margin-top: 1rem;
 }
 
+.about-yume-cta {
+  margin-top: 1.5rem;
+}
+
 .about-yume-visual {
   aspect-ratio: 4 / 3;
   border: 1px solid rgba(64, 126, 140, 0.35);
