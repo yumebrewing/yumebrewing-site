@@ -592,7 +592,7 @@ main > .section:nth-of-type(3n) .trade-points {
   );
   box-shadow: 0 12px 26px rgba(8, 58, 79, 0.12);
   padding: 48px 56px;
-  text-align: center;
+  text-align: left;
 }
 
 .launch-offer-card h3 {
@@ -604,8 +604,7 @@ main > .section:nth-of-type(3n) .trade-points {
   margin: 0;
   padding: 0;
   display: block;
-  width: fit-content;
-  margin-inline: auto;
+  width: 100%;
   color: #E5E1DD;
   opacity: 1;
   mix-blend-mode: normal;
@@ -613,16 +612,14 @@ main > .section:nth-of-type(3n) .trade-points {
 
 .launch-offer-list li {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1rem 1fr;
   align-items: start;
-  column-gap: 0.55rem;
-  justify-items: start;
-  text-align: left;
+  column-gap: 0.65rem;
   color: #E5E1DD;
   opacity: 1;
   mix-blend-mode: normal;
   filter: none;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .launch-offer-list li:last-child {
@@ -638,12 +635,12 @@ main > .section:nth-of-type(3n) .trade-points {
 }
 
 .launch-offer-note {
-  margin-top: 26px;
-  font-size: 0.95rem;
-  font-weight: 600;
+  margin-top: 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
   color: #E5E1DD;
   opacity: 0.9;
-  text-align: center;
+  text-align: left;
 }
 
 .trade-pricing-intro {
