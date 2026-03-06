@@ -294,6 +294,20 @@ body.site-ready .hero-content .hero-cta {
   padding-block: clamp(3rem, 7vw, 5rem);
 }
 
+.section,
+.site-footer {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 480ms ease, transform 480ms ease;
+  will-change: opacity, transform;
+}
+
+.section.in-view,
+.site-footer.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .section-alt {
   background: #f8f8f8;
 }
@@ -877,5 +891,12 @@ body.site-ready .hero-content .hero-cta {
   body:not(.site-ready) .hero-content .hero-copy,
   body:not(.site-ready) .hero-content .hero-cta {
     opacity: 1;
+  }
+
+  .section,
+  .site-footer {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
