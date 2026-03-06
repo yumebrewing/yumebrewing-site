@@ -41,9 +41,11 @@ img {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(58, 50, 44, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 0;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
 }
 
 .nav-inner {
@@ -55,11 +57,12 @@ img {
 }
 
 .brand {
-  color: #111;
-  font-size: 0.95rem;
+  color: #f5eee4;
+  font-size: clamp(1.05rem, 1.35vw, 1.28rem);
   text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1;
 }
 
 .top-nav nav {
@@ -69,16 +72,16 @@ img {
 }
 
 .top-nav nav a {
-  color: #222;
+  color: #f2e9dc;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   padding-bottom: 0.15rem;
   border-bottom: 1px solid transparent;
 }
 
 .top-nav nav a.active,
 .top-nav nav a:hover {
-  border-bottom-color: rgba(0, 0, 0, 0.3);
+  border-bottom-color: rgba(246, 235, 220, 0.85);
 }
 
 .hero {
@@ -670,6 +673,24 @@ body.site-ready .hero-content .hero-cta {
     width: 100%;
     justify-content: space-between;
     gap: 0.45rem 0.75rem;
+  }
+
+  .brand {
+    font-size: 1.08rem;
+  }
+
+  .top-nav nav a {
+    font-size: 0.83rem;
+    padding: 0.3rem 0.55rem;
+    border: 1px solid rgba(245, 234, 220, 0.25);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .top-nav nav a.active,
+  .top-nav nav a:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(246, 235, 220, 0.55);
   }
 
   .hero {
