@@ -224,7 +224,11 @@
         }
 
         var rect = hero.getBoundingClientRect();
-        var offset = Math.max(-24, Math.min(24, rect.top * -0.12));
+        if (rect.bottom < 0 || rect.top > window.innerHeight) {
+          return;
+        }
+
+        var offset = Math.max(-14, Math.min(14, rect.top * -0.08));
         hero.style.setProperty("--hero-parallax-offset", offset.toFixed(2) + "px");
       }
 
