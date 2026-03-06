@@ -971,10 +971,31 @@ main > .section:nth-of-type(3n) .trade-points {
 .site-footer p {
   margin: 0;
   font-size: 0.95rem;
+  color: #E5E1DD;
+  opacity: 1;
+}
+
+.site-footer .footer-col > p:first-child strong {
+  color: #A58D66;
+}
+
+.site-footer .footer-nav a,
+.site-footer .footer-col a {
+  color: #E5E1DD;
+  opacity: 1;
 }
 
 .site-footer a {
-  color: var(--gold);
+  color: #E5E1DD;
+}
+
+.site-footer a:hover {
+  color: #A58D66;
+}
+
+.site-footer .footer-legal p {
+  color: #E5E1DD;
+  opacity: 1;
 }
 
 .age-gate {
