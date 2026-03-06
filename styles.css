@@ -341,8 +341,8 @@ body.site-ready .hero-content .hero-cta {
 body.scroll-anim-ready .section:not(.in-view),
 body.scroll-anim-ready .site-footer:not(.in-view) {
   opacity: 0;
-  transform: translateY(12px);
-  transition: opacity 420ms ease, transform 420ms ease;
+  transform: translateY(20px);
+  transition: opacity 680ms ease-out, transform 680ms ease-out;
   will-change: opacity, transform;
 }
 
