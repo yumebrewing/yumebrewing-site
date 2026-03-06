@@ -161,6 +161,11 @@
         <label for="birth-year">Birth year</label>
         <input id="birth-year" name="birth-year" type="number" inputmode="numeric" min="1900" required />
 
+        <label class="remember-row" for="remember-age">
+          <input id="remember-age" name="remember-age" type="checkbox" />
+          <span>Remember me on this device</span>
+        </label>
+
         <button class="cta age-gate-submit" type="submit">Enter Site</button>
         <p id="age-gate-message" class="age-gate-message" aria-live="polite"></p>
       </form>
@@ -176,6 +181,7 @@
       var form = document.getElementById("age-gate-form");
       var monthInput = document.getElementById("birth-month");
       var yearInput = document.getElementById("birth-year");
+      var rememberInput = document.getElementById("remember-age");
       var message = document.getElementById("age-gate-message");
       var now = new Date();
       var currentYear = now.getFullYear();
@@ -224,9 +230,11 @@
         }
 
         if (isAdult(month, year)) {
-          try {
-            localStorage.setItem(key, "true");
-          } catch (error) {
+          if (rememberInput.checked) {
+            try {
+              localStorage.setItem(key, "true");
+            } catch (error) {
+            }
           }
           unlockSite();
           return;

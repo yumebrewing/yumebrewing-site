@@ -44,8 +44,13 @@ img {
   display: grid;
   place-items: center;
   padding: 1rem;
-  background: rgba(250, 250, 250, 0.95);
-  backdrop-filter: blur(6px);
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.34) 58%,
+    rgba(255, 255, 255, 0.42) 100%
+  );
+  backdrop-filter: blur(3px);
 }
 
 .age-gate-hidden {
@@ -56,9 +61,10 @@ img {
   width: min(100%, 28rem);
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 16px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.88);
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.12);
   padding: clamp(1.1rem, 3.5vw, 1.75rem);
+  animation: gate-enter 0.45s ease-out both;
 }
 
 .age-gate-eyebrow {
@@ -92,6 +98,21 @@ img {
   color: #222;
 }
 
+.remember-row {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.remember-row input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  accent-color: #111;
+}
+
 .age-gate-form select,
 .age-gate-form input {
   width: 100%;
@@ -113,6 +134,17 @@ img {
   margin: 0.4rem 0 0;
   font-size: 0.9rem;
   color: #8b1a1a;
+}
+
+@keyframes gate-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .top-nav {
@@ -463,13 +495,13 @@ img {
   .section-cta,
   .cta,
   button,
-  input,
+  input:not([type="checkbox"]),
   select,
   textarea {
     width: 100%;
   }
 
-  input,
+  input:not([type="checkbox"]),
   select,
   textarea {
     max-width: 100%;
