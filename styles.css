@@ -922,7 +922,7 @@ main > .section:nth-of-type(3n) .trade-points {
 }
 
 .site-footer {
-  padding-block: 2rem 2.5rem;
+  padding-block: 1.75rem 2rem;
   border-top: 1px solid rgba(64, 126, 140, 0.25);
   background: var(--navy);
 }
@@ -935,12 +935,13 @@ main > .section:nth-of-type(3n) .trade-points {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: 1rem 1.25rem;
+  align-items: start;
 }
 
 .footer-col {
   display: grid;
-  gap: 0.35rem;
+  gap: 0.25rem;
   align-content: start;
 }
 
@@ -958,8 +959,8 @@ main > .section:nth-of-type(3n) .trade-points {
 }
 
 .footer-legal {
-  margin-top: 1.35rem;
-  padding-top: 0.95rem;
+  margin-top: 1.05rem;
+  padding-top: 0.8rem;
   border-top: 1px solid rgba(229, 225, 221, 0.16);
   display: flex;
   justify-content: space-between;
@@ -1277,6 +1278,10 @@ main > .section:nth-of-type(3n) .trade-points {
   .footer-legal {
     display: grid;
     gap: 0.25rem;
+  }
+
+  .footer-grid {
+    gap: 0.9rem;
   }
 
   .section {
