@@ -902,6 +902,16 @@ body.site-ready .hero-content .hero-cta {
   }
 }
 
+@media (min-width: 768px) {
+  .tasting-notes-card p {
+    margin-bottom: 1.5rem;
+  }
+
+  .tasting-notes-card .cta {
+    margin-top: 0.5rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero,
   .beer-hero,
