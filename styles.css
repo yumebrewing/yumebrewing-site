@@ -17,6 +17,7 @@
   --navy: #083a4f;
   --teal: #407e8c;
   --gold: #a58d66;
+  --display-font: "Bourbon", "Playfair Display", serif;
 }
 
 html,
@@ -73,6 +74,7 @@ img {
 
 .brand {
   color: var(--antique-brass);
+  font-family: var(--display-font);
   font-size: clamp(1.18rem, 1.6vw, 1.5rem);
   text-decoration: none;
   font-weight: 800;
@@ -155,6 +157,7 @@ img {
 
 .hero h1,
 .hero-heading {
+  font-family: var(--display-font);
   margin-bottom: 0.5rem;
   font-size: clamp(2rem, 4.5vw, 3.6rem);
   line-height: 1.1;
@@ -248,6 +251,7 @@ body.site-ready .hero-content .hero-cta {
 }
 
 .page-hero h1 {
+  font-family: var(--display-font);
   margin: 0 0 1rem;
   font-size: clamp(2.1rem, 4.4vw, 3.4rem);
   line-height: 1.1;
@@ -294,6 +298,7 @@ body.site-ready .hero-content .hero-cta {
 }
 
 .beer-hero h1 {
+  font-family: var(--display-font);
   margin: 0 0 0.65rem;
   font-size: clamp(2rem, 4.2vw, 3.4rem);
   line-height: 1.1;
@@ -339,6 +344,7 @@ main > .section:nth-of-type(3n) {
 }
 
 .section h2 {
+  font-family: var(--display-font);
   margin: 0 0 1rem;
   font-size: clamp(1.85rem, 3.8vw, 3rem);
   line-height: 1.1;
