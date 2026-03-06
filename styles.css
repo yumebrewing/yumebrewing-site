@@ -378,6 +378,35 @@ body.site-ready .hero-content .hero-cta {
   margin: 0;
 }
 
+.flavour-profile-grid {
+  margin-top: 1.35rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.flavour-profile-item {
+  padding: 0.25rem 1rem;
+}
+
+.flavour-profile-item + .flavour-profile-item {
+  border-left: 1px solid rgba(64, 126, 140, 0.35);
+}
+
+.flavour-profile-item h3 {
+  margin: 0 0 0.45rem;
+  font-family: var(--display-font);
+  font-size: clamp(1.02rem, 1.4vw, 1.18rem);
+  line-height: 1.2;
+  color: var(--navy);
+}
+
+.flavour-profile-item p {
+  margin: 0;
+  font-size: clamp(0.95rem, 1.15vw, 1rem);
+  color: rgba(8, 58, 79, 0.86);
+}
+
 .section {
   padding-block: clamp(4.25rem, 9.5vw, 7.5rem);
   min-height: min(92svh, 56rem);
@@ -1169,8 +1198,19 @@ main > .section:nth-of-type(3n) .trade-points {
   }
 
   .beer-hero-specs,
-  .beer-notes-grid {
+  .beer-notes-grid,
+  .flavour-profile-grid {
     grid-template-columns: 1fr;
+  }
+
+  .flavour-profile-item {
+    padding: 0;
+  }
+
+  .flavour-profile-item + .flavour-profile-item {
+    border-left: 0;
+    border-top: 1px solid rgba(64, 126, 140, 0.28);
+    padding-top: 0.9rem;
   }
 
   .hero-content {
