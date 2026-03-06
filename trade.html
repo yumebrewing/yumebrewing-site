@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Yume Brewing Co. | Home</title>
+<title>Yume Brewing Co. | Trade Enquiries</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
@@ -13,38 +13,69 @@
       <div class="container nav-inner">
         <a class="brand" href="index.html">Yume Brewing Co.</a>
         <nav aria-label="Primary">
-          <a href="index.html" class="active" aria-current="page">Home</a>
+          <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="beer.html">The Beer</a>
-          <a href="trade.html">Trade</a>
+          <a href="trade.html" class="active" aria-current="page">Trade</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-heading">Yume Brewing Co.</h1>
-          <h2 class="hero-subheading">Fresh Beer, Reimagined</h2>
-          <p class="hero-copy">Light lager brewed with a hint of Japanese yuzu.<br>Launching Summer 2026 in Cape Town</p>
-          <a class="cta hero-cta" href="trade.html">Trade Enquiries</a>
-        </div>
-      </div>
-    </section>
-
     <main>
-      <section class="section home-intro">
+      <section class="page-hero">
         <div class="container section-narrow">
-          <h2>Premium Lager, Modern Direction</h2>
+          <p class="page-kicker">Trade Enquiries</p>
+          <h1>Stock Yume</h1>
           <p>
-            Yume is built for contemporary venues and drinkers who value clean
-            flavour, thoughtful design, and dependable quality in every pour.
+            Planning to stock Yume? Tell us about your venue and volume needs,
+            and we will share trade pricing, launch allocation, and onboarding details.
           </p>
-          <div class="home-actions">
-            <a class="cta" href="beer.html">Explore The Beer</a>
-            <a class="cta cta-outline" href="trade.html">Request Wholesale</a>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="trade-layout">
+            <aside class="offer-box trade-offer" aria-label="Launch partner offer">
+              <h3>Launch Partner Offer</h3>
+              <ul class="quick-facts">
+                <li>1 free case</li>
+                <li>2nd case at cost</li>
+                <li>standard wholesale pricing thereafter</li>
+              </ul>
+              <ul class="trade-points">
+                <li>limited pilot batch</li>
+                <li>first venues get priority allocation</li>
+              </ul>
+            </aside>
+
+            <form class="trade-form" action="#" method="post">
+              <label for="trade-name">Name</label>
+              <input id="trade-name" name="name" type="text" required />
+
+              <label for="trade-venue">Venue</label>
+              <input id="trade-venue" name="venue" type="text" required />
+
+              <label for="trade-email">Email</label>
+              <input id="trade-email" name="email" type="email" required />
+
+              <label for="trade-message">Message</label>
+              <textarea id="trade-message" name="message" rows="4"></textarea>
+
+              <button class="cta section-cta" type="submit">Send Trade Enquiry</button>
+            </form>
           </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container section-narrow">
+          <h2>Partnership Details</h2>
+          <p>
+            This page has space for expanded trade terms, logistics details,
+            portfolio materials, and venue imagery as your distribution expands.
+          </p>
         </div>
       </section>
     </main>
