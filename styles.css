@@ -94,12 +94,13 @@ img {
   min-height: 100svh;
   background-image: url("images/yume-hero.jpg");
   background-size: cover;
-  background-position: center top;
+  background-position: center calc(50% + var(--hero-parallax-offset, 0px));
   display: flex;
   align-items: flex-end;
   text-align: center;
   padding-block: clamp(4.5rem, 10vh, 7rem) clamp(2rem, 6vh, 4rem);
   position: relative;
+  will-change: background-position;
 }
 
 .hero::before {
@@ -879,6 +880,7 @@ body.site-ready .hero-content .hero-cta {
   .age-gate-card {
     animation: none !important;
     transform: none !important;
+    --hero-parallax-offset: 0px !important;
   }
 
   body:not(.site-ready) .hero,
