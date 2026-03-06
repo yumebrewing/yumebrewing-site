@@ -336,6 +336,48 @@ body.site-ready .hero-content .hero-cta {
   text-shadow: 0 3px 12px rgba(0, 0, 0, 0.36);
 }
 
+.beer-hero-specs {
+  margin: 1.2rem auto 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem 0.85rem;
+  max-width: 40rem;
+}
+
+.beer-hero-specs li {
+  border: 1px solid rgba(229, 225, 221, 0.32);
+  border-radius: 10px;
+  background: rgba(8, 58, 79, 0.24);
+  padding: 0.5rem 0.65rem;
+  font-size: clamp(0.88rem, 1.1vw, 0.96rem);
+  color: #efe3d3;
+}
+
+.beer-hero-specs strong {
+  color: var(--gold);
+}
+
+.beer-notes-grid {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.beer-note-card h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--display-font);
+  font-size: clamp(1.02rem, 1.35vw, 1.2rem);
+  line-height: 1.2;
+  color: var(--navy);
+}
+
+.beer-note-card p {
+  margin: 0;
+}
+
 .section {
   padding-block: clamp(4.25rem, 9.5vw, 7.5rem);
   min-height: min(92svh, 56rem);
@@ -1124,6 +1166,11 @@ main > .section:nth-of-type(3n) .trade-points {
     min-height: 60vh;
     background-size: cover;
     background-position: center calc(50% + var(--beer-hero-parallax-offset, 0px));
+  }
+
+  .beer-hero-specs,
+  .beer-notes-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-content {
