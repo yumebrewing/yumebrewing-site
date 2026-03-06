@@ -54,9 +54,10 @@ img {
 }
 
 .top-nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 1000;
   background: rgba(8, 58, 79, 0.94);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
