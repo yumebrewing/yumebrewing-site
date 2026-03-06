@@ -239,8 +239,8 @@
           return;
         }
 
-        var strength = mqMobile.matches ? 0.035 : 0.08;
-        var maxOffset = mqMobile.matches ? 6 : 14;
+        var strength = mqMobile.matches ? 0.03 : 0.08;
+        var maxOffset = mqMobile.matches ? 5 : 14;
         var offset = Math.max(-maxOffset, Math.min(maxOffset, rect.top * -strength));
         hero.style.setProperty("--hero-parallax-offset", offset.toFixed(2) + "px");
       }
@@ -254,6 +254,10 @@
 
       window.addEventListener("scroll", onScroll, { passive: true });
       window.addEventListener("resize", onScroll);
+      window.addEventListener("orientationchange", onScroll);
+      document.addEventListener("visibilitychange", function () {
+        if (!document.hidden) onScroll();
+      });
       applyParallax();
     })();
   </script>
