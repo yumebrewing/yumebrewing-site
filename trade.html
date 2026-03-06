@@ -346,10 +346,10 @@
           })
           .then(function () {
             form.reset();
-            setStatus("is-success", "Thanks — we’ve received your trade enquiry and will be in touch shortly.");
+            setStatus("is-success", "Thank you for your enquiry, someone will get back to you shortly.");
           })
           .catch(function () {
-            setStatus("is-error", "Sorry, your enquiry could not be submitted right now. Please try again.");
+            setStatus("is-error", "Sorry, something went wrong. Please try again or email us directly at yumebrewingco@gmail.com.");
           })
           .finally(function () {
             if (submitButton) {
