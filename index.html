@@ -13,9 +13,9 @@
     <div class="container nav-inner">
       <a class="brand" href="#">Yume Brewing Co.</a>
       <nav aria-label="Primary">
+        <a href="#about">About</a>
         <a href="#beer">The Beer</a>
         <a href="#stock">Stock Yume</a>
-        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -27,15 +27,48 @@
         <h1>Yume Brewing Co.</h1>
         <h2>Fresh Beer, Reimagined</h2>
         <p>Light lager brewed with a hint of Japanese yuzu.<br>Launching Summer 2026 in Cape Town</p>
-        <a class="cta" href="#trade">Trade Enquiries</a>
+        <a class="cta" href="#stock">Trade Enquiries</a>
       </div>
     </div>
   </section>
 
   <main>
-    <section class="section section-alt" id="trade">
+    <section class="section" id="about">
+      <div class="container section-narrow">
+        <h2>About / Story</h2>
+        <p>
+          Yume began with a simple idea: brew a premium lager that feels both
+          familiar and new. Inspired by Japanese minimalism and Cape Town
+          hospitality, we focus on clean flavour, thoughtful detail, and
+          consistent quality from first sip to final pour.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="beer">
+      <div class="container two-col">
+        <div>
+          <h2>The Beer</h2>
+          <p>
+            Yume is a bright, clean light lager brewed with a subtle yuzu finish.
+            It is designed for all-day drinkability with a crisp character that
+            pairs naturally with modern food menus.
+          </p>
+        </div>
+        <div>
+          <ul class="quick-facts">
+            <li>Style: Light Lager</li>
+            <li>Flavour: Citrus lift from Japanese yuzu</li>
+            <li>Finish: Crisp and refreshing</li>
+            <li>Serve: Best enjoyed ice cold</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stock">
       <div class="container">
-        <h2>Trade</h2>
+        <h2>Stock Yume</h2>
         <p>
           Planning to stock Yume? Tell us about your venue and volume needs, and
           we will share trade pricing, launch allocation, and onboarding details.
@@ -70,56 +103,6 @@
             <button class="cta section-cta" type="submit">Send Trade Enquiry</button>
           </form>
         </div>
-      </div>
-    </section>
-
-    <section class="section" id="beer">
-      <div class="container two-col">
-        <div>
-          <h2>The Beer</h2>
-          <p>
-            Yume is a bright, clean light lager brewed with a subtle yuzu finish.
-            It is designed for all-day drinkability with a crisp character that
-            pairs naturally with modern food menus.
-          </p>
-        </div>
-        <div>
-          <ul class="quick-facts">
-            <li>Style: Light Lager</li>
-            <li>Flavour: Citrus lift from Japanese yuzu</li>
-            <li>Finish: Crisp and refreshing</li>
-            <li>Serve: Best enjoyed ice cold</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="stock">
-      <div class="container two-col">
-        <div>
-          <h2>Stock Yume</h2>
-          <p>
-            We are onboarding selected bars, bottle stores, and restaurant groups
-            for launch. Secure early allocation and support for your first pour.
-          </p>
-          <a class="cta section-cta" href="mailto:yumebrewingco@gmail.com?subject=Stock%20Yume%20Enquiry">Request Wholesale Info</a>
-        </div>
-        <aside class="offer-box" aria-label="Launch offer">
-          <h3>Launch Offer</h3>
-          <p>1 free case, 2nd case at cost, standard wholesale thereafter.</p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container section-narrow">
-        <h2>About / Story</h2>
-        <p>
-          Yume began with a simple idea: brew a premium lager that feels both
-          familiar and new. Inspired by Japanese minimalism and Cape Town
-          hospitality, we focus on clean flavour, thoughtful detail, and
-          consistent quality from first sip to final pour.
-        </p>
       </div>
     </section>
   </main>
@@ -191,6 +174,7 @@
 
       function lockSite() {
         body.classList.add("age-locked");
+        body.classList.remove("site-ready");
         siteContent.setAttribute("inert", "");
         gate.classList.remove("age-gate-hidden");
       }
@@ -199,6 +183,9 @@
         body.classList.remove("age-locked");
         siteContent.removeAttribute("inert");
         gate.classList.add("age-gate-hidden");
+        window.requestAnimationFrame(function () {
+          body.classList.add("site-ready");
+        });
       }
 
       function isAdult(month, year) {

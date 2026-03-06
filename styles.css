@@ -147,6 +147,42 @@ img {
   }
 }
 
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-item-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  .hero-content > *,
+  .age-gate-card {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  body:not(.site-ready) .hero,
+  body:not(.site-ready) .hero-content > * {
+    opacity: 1;
+  }
+}
+
 .top-nav {
   position: sticky;
   top: 0;
@@ -196,6 +232,15 @@ img {
   position: relative;
 }
 
+body:not(.site-ready) .hero {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+body.site-ready .hero {
+  animation: hero-enter 0.55s ease-out both;
+}
+
 .hero::before {
   content: "";
   position: absolute;
@@ -218,6 +263,31 @@ img {
   max-width: 52rem;
   margin: 0 auto;
   text-align: center;
+}
+
+body:not(.site-ready) .hero-content > * {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+body.site-ready .hero-content > * {
+  animation: hero-item-enter 0.48s ease-out both;
+}
+
+body.site-ready .hero-content > *:nth-child(1) {
+  animation-delay: 0.12s;
+}
+
+body.site-ready .hero-content > *:nth-child(2) {
+  animation-delay: 0.18s;
+}
+
+body.site-ready .hero-content > *:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+body.site-ready .hero-content > *:nth-child(4) {
+  animation-delay: 0.3s;
 }
 
 .hero h1 {
@@ -383,7 +453,6 @@ img {
   color: #111;
 }
 
-#trade,
 #beer,
 #stock,
 #about,
