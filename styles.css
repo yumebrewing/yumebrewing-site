@@ -243,11 +243,12 @@ body.site-ready .hero-content .hero-cta {
   min-height: 80vh;
   background-image: url("images/beer-hero.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center calc(50% + var(--beer-hero-parallax-offset, 0px));
   position: relative;
   display: grid;
   place-items: center;
   text-align: center;
+  will-change: background-position;
 }
 
 .beer-hero::before {
@@ -858,6 +859,7 @@ body.site-ready .hero-content .hero-cta {
 
 @media (prefers-reduced-motion: reduce) {
   .hero,
+  .beer-hero,
   .hero::after,
   .hero-content .hero-logo,
   .hero-content .logo,
@@ -870,6 +872,7 @@ body.site-ready .hero-content .hero-cta {
     animation: none !important;
     transform: none !important;
     --hero-parallax-offset: 0px !important;
+    --beer-hero-parallax-offset: 0px !important;
   }
 
   body:not(.site-ready) .hero,

@@ -209,5 +209,46 @@
       targets.forEach(function (el) { observer.observe(el); });
     })();
   </script>
+  <script>
+    (function () {
+      var hero = document.querySelector(".beer-hero");
+      if (!hero) return;
+
+      var mqMobile = window.matchMedia("(max-width: 768px)");
+      var mqReduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+      var ticking = false;
+
+      function shouldDisable() {
+        return mqMobile.matches || mqReduce.matches;
+      }
+
+      function applyParallax() {
+        ticking = false;
+        if (shouldDisable()) {
+          hero.style.setProperty("--beer-hero-parallax-offset", "0px");
+          return;
+        }
+
+        var rect = hero.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > window.innerHeight) {
+          return;
+        }
+
+        var offset = Math.max(-14, Math.min(14, rect.top * -0.08));
+        hero.style.setProperty("--beer-hero-parallax-offset", offset.toFixed(2) + "px");
+      }
+
+      function onScroll() {
+        if (!ticking) {
+          ticking = true;
+          window.requestAnimationFrame(applyParallax);
+        }
+      }
+
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", onScroll);
+      applyParallax();
+    })();
+  </script>
 </body>
 </html>
