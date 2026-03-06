@@ -446,7 +446,7 @@ main > .section:nth-of-type(3n) .trade-points {
 }
 
 .about-yume-visual {
-  min-height: clamp(16rem, 36vw, 24rem);
+  aspect-ratio: 4 / 3;
   border: 1px solid rgba(64, 126, 140, 0.35);
   border-radius: 8px;
   overflow: hidden;
@@ -454,8 +454,10 @@ main > .section:nth-of-type(3n) .trade-points {
 
 .about-yume-image {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
 }
 
 .home-actions {
