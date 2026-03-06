@@ -934,8 +934,37 @@ main > .section:nth-of-type(3n) .trade-points {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.footer-col {
+  display: grid;
+  gap: 0.35rem;
+  align-content: start;
+}
+
+.footer-col > p:first-child {
+  margin-bottom: 0.2rem;
+}
+
+.footer-nav {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.footer-nav a {
+  width: fit-content;
+}
+
+.footer-legal {
+  margin-top: 1.35rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid rgba(229, 225, 221, 0.16);
+  display: flex;
+  justify-content: space-between;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .site-footer p {
@@ -1243,6 +1272,11 @@ main > .section:nth-of-type(3n) .trade-points {
   .trade-layout,
   .about-yume-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-legal {
+    display: grid;
+    gap: 0.25rem;
   }
 
   .section {
