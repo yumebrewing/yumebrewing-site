@@ -327,8 +327,8 @@ body.site-ready .hero-content .hero-cta {
   transform: translateY(0);
 }
 
-body.scroll-anim-ready .section,
-body.scroll-anim-ready .site-footer {
+body.scroll-anim-ready .section:not(.in-view),
+body.scroll-anim-ready .site-footer:not(.in-view) {
   opacity: 0;
   transform: translateY(12px);
   transition: opacity 420ms ease, transform 420ms ease;
