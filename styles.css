@@ -301,11 +301,7 @@ body.site-ready .hero-content .hero-cta {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(8, 58, 79, 0.14),
-    rgba(8, 58, 79, 0.4)
-  );
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .beer-hero .container {
@@ -323,7 +319,7 @@ body.site-ready .hero-content .hero-cta {
   margin: 0 0 0.65rem;
   font-size: clamp(2rem, 4.2vw, 3.4rem);
   line-height: 1.1;
-  color: var(--sand);
+  color: #F5F3EF;
   text-shadow: 0 4px 16px rgba(0, 0, 0, 0.42);
 }
 
@@ -332,8 +328,12 @@ body.site-ready .hero-content .hero-cta {
   font-size: clamp(1.05rem, 1.8vw, 1.35rem);
   line-height: 1.4;
   font-weight: 600;
-  color: #efe3d3;
+  color: #F5F3EF;
   text-shadow: 0 3px 12px rgba(0, 0, 0, 0.36);
+}
+
+.beer-hero p {
+  color: #F5F3EF;
 }
 
 .beer-hero-specs {
@@ -347,12 +347,12 @@ body.site-ready .hero-content .hero-cta {
 }
 
 .beer-hero-specs li {
-  border: 1px solid rgba(229, 225, 221, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px;
-  background: rgba(8, 58, 79, 0.24);
+  background: rgba(0, 0, 0, 0.35);
   padding: 0.5rem 0.65rem;
   font-size: clamp(0.88rem, 1.1vw, 0.96rem);
-  color: #efe3d3;
+  color: #F5F3EF;
 }
 
 .beer-hero-specs strong {
