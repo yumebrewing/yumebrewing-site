@@ -635,6 +635,10 @@ body.site-ready .hero-content .hero-cta {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
   .nav-inner {
     min-height: 3.75rem;
     align-items: flex-start;
@@ -701,8 +705,37 @@ body.site-ready .hero-content .hero-cta {
     padding-block: 2.4rem;
   }
 
+  .section p {
+    line-height: 1.6;
+  }
+
+  .section h2 + p,
+  .content-placeholder h2 + p {
+    margin-top: 0.75rem;
+  }
+
   .home-actions {
     flex-direction: column;
+  }
+
+  .offer-box,
+  .trade-form,
+  .content-placeholder {
+    width: 100%;
+    margin-inline: auto;
+    padding: 1.1rem;
+  }
+
+  .cta,
+  .section-cta,
+  .hero .cta,
+  .hero-cta {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-cta {
+    margin-top: 1.5rem;
   }
 
   .cta,
