@@ -612,6 +612,36 @@ main > .section:nth-of-type(3n) .trade-points {
   object-fit: cover;
 }
 
+.launch-venues-section {
+  padding: 84px 0;
+  text-align: center;
+  background: var(--sand);
+}
+
+.launch-venues-section h2 {
+  margin: 0 0 1rem;
+  font-family: var(--display-font);
+  font-size: clamp(1.85rem, 3.8vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: var(--navy);
+}
+
+.launch-venues-section p {
+  margin: 0;
+  font-size: clamp(1.02rem, 1.55vw, 1.18rem);
+  line-height: 1.6;
+  color: rgba(8, 58, 79, 0.88);
+}
+
+.launch-venues-section p + p {
+  margin-top: 0.65rem;
+}
+
+.launch-venues-cta {
+  margin-top: 1.35rem;
+}
+
 .stock-yume-layout {
   margin-top: 1.6rem;
 }
@@ -819,6 +849,10 @@ main > .section:nth-of-type(3n) .trade-points {
 @media (max-width: 768px) {
   .moments-section {
     padding: 72px 0;
+  }
+
+  .launch-venues-section {
+    padding: 64px 0;
   }
 
   .moments-header {
