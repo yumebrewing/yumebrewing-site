@@ -430,6 +430,32 @@ main > .section:nth-of-type(3n) .trade-points {
   text-align: center;
 }
 
+.about-yume-section {
+  min-height: auto;
+}
+
+.about-yume-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: clamp(1.75rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.about-yume-grid p + p {
+  margin-top: 1rem;
+}
+
+.about-yume-visual {
+  min-height: clamp(16rem, 36vw, 24rem);
+  border: 1px solid rgba(64, 126, 140, 0.35);
+  border-radius: 14px;
+  background: linear-gradient(
+    140deg,
+    rgba(8, 58, 79, 0.85),
+    rgba(64, 126, 140, 0.55)
+  );
+}
+
 .home-actions {
   margin-top: 1.8rem;
   display: flex;
@@ -817,7 +843,8 @@ main > .section:nth-of-type(3n) .trade-points {
 
   .two-col,
   .footer-grid,
-  .trade-layout {
+  .trade-layout,
+  .about-yume-grid {
     grid-template-columns: 1fr;
   }
 
