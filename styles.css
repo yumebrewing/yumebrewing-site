@@ -486,7 +486,7 @@ main > .section:nth-of-type(3n) .trade-points {
 
 .why-yuzu-visual {
   border: 1px solid rgba(64, 126, 140, 0.35);
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   aspect-ratio: 4 / 3;
 }
@@ -496,6 +496,7 @@ main > .section:nth-of-type(3n) .trade-points {
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: inherit;
 }
 
 .offer-box {
