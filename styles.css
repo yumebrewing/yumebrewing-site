@@ -90,7 +90,7 @@ img {
   min-height: 100svh;
   background-image: url("images/yume-hero.jpg");
   background-size: cover;
-  background-position: center calc(50% + var(--hero-parallax-offset, 0px));
+  background-position: center calc(50% + 18px + var(--hero-parallax-offset, 0px));
   display: flex;
   align-items: flex-end;
   text-align: center;
@@ -701,7 +701,7 @@ body.site-ready .hero-content .hero-cta {
     height: auto;
     min-height: 100svh;
     background-size: cover;
-    background-position: center calc(50% + var(--hero-parallax-offset, 0px));
+    background-position: center calc(50% + 12px + var(--hero-parallax-offset, 0px));
     display: flex;
     flex-direction: column;
     justify-content: center;
