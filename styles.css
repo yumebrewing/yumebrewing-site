@@ -5,6 +5,7 @@
 }
 
 :root {
+  --nav-height: 4.25rem;
   --chinese-black: #083a4f;
   --dark-jungle-green: #407e8c;
   --jet: #407e8c;
@@ -53,10 +54,16 @@ img {
   padding-inline: clamp(1rem, 4vw, 2.5rem);
 }
 
+#site-content {
+  padding-top: var(--nav-height);
+}
+
 .top-nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 1000;
   background: rgba(8, 58, 79, 0.94);
   backdrop-filter: blur(10px);
@@ -724,6 +731,10 @@ main > .section:nth-of-type(3n) .trade-points {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --nav-height: 5.5rem;
+  }
+
   .container {
     padding-inline: 1rem;
   }
@@ -876,6 +887,10 @@ main > .section:nth-of-type(3n) .trade-points {
 }
 
 @media (max-width: 420px) {
+  :root {
+    --nav-height: 6rem;
+  }
+
   .container {
     padding-inline: 0.9rem;
   }
