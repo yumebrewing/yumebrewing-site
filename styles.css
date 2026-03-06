@@ -472,6 +472,32 @@ main > .section:nth-of-type(3n) .trade-points {
   flex-wrap: wrap;
 }
 
+.why-yuzu-grid {
+  align-items: center;
+}
+
+.why-yuzu-grid p + p {
+  margin-top: 1rem;
+}
+
+.why-yuzu-grid .quick-facts {
+  margin-top: 1.25rem;
+}
+
+.why-yuzu-visual {
+  border: 1px solid rgba(64, 126, 140, 0.35);
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.why-yuzu-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .offer-box {
   border: 1px solid rgba(165, 141, 102, 0.35);
   border-radius: 14px;
