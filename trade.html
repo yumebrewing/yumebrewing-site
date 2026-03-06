@@ -23,59 +23,110 @@
     </header>
 
     <main>
-      <section class="page-hero">
+      <section class="page-hero trade-page-hero">
         <div class="container section-narrow">
           <p class="page-kicker">Trade Enquiries</p>
-          <h1>Stock Yume</h1>
+          <h1>Trade Enquiries</h1>
+          <h2>Partner with Yume Brewing Co.</h2>
           <p>
-            Planning to stock Yume? Tell us about your venue and volume needs,
-            and we will share trade pricing, launch allocation, and onboarding details.
+            We are launching with a limited pilot batch and partnering with a small number of venues looking for a fresh, food-friendly lager with a distinctive yuzu citrus profile.
           </p>
+          <a class="cta trade-hero-cta" href="#trade-pricing">Request Trade Pricing</a>
         </div>
       </section>
 
-      <section class="section section-alt">
+      <section class="section section-alt why-stock-section">
         <div class="container">
-          <div class="trade-layout">
-            <aside class="offer-box trade-offer" aria-label="Launch partner offer">
-              <h3>Launch Partner Offer</h3>
-              <ul class="quick-facts">
-                <li>1 free case</li>
-                <li>2nd case at cost</li>
-                <li>standard wholesale pricing thereafter</li>
-              </ul>
-              <ul class="trade-points">
-                <li>limited pilot batch</li>
-                <li>first venues get priority allocation</li>
-              </ul>
-            </aside>
-
-            <form class="trade-form" action="#" method="post">
-              <label for="trade-name">Name</label>
-              <input id="trade-name" name="name" type="text" required />
-
-              <label for="trade-venue">Venue</label>
-              <input id="trade-venue" name="venue" type="text" required />
-
-              <label for="trade-email">Email</label>
-              <input id="trade-email" name="email" type="email" required />
-
-              <label for="trade-message">Message</label>
-              <textarea id="trade-message" name="message" rows="4"></textarea>
-
-              <button class="cta section-cta" type="submit">Send Trade Enquiry</button>
-            </form>
+          <h2>Why Stock Yume</h2>
+          <div class="why-stock-grid">
+            <article class="why-stock-card">
+              <h3>Light, Food-Friendly Lager</h3>
+              <p>Built for all-day service, shared plates, and menus that prioritize freshness.</p>
+            </article>
+            <article class="why-stock-card">
+              <h3>Distinctive Yuzu Citrus Profile</h3>
+              <p>A refined citrus lift that adds character without overpowering the beer.</p>
+            </article>
+            <article class="why-stock-card">
+              <h3>Made for Premium Hospitality</h3>
+              <p>Designed for bars, restaurants, hotels, and venues with elevated guest experiences.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section launch-offer-section">
         <div class="container section-narrow">
-          <h2>Partnership Details</h2>
-          <p>
-            This page has space for expanded trade terms, logistics details,
-            portfolio materials, and venue imagery as your distribution expands.
-          </p>
+          <aside class="offer-box launch-offer-card" aria-label="Launch partner offer">
+            <h3>Launch Partner Offer</h3>
+            <ul class="quick-facts">
+              <li>1 free case</li>
+              <li>2nd case at cost</li>
+              <li>Standard wholesale pricing thereafter</li>
+            </ul>
+            <p class="launch-offer-note">Limited pilot batch. Early venues receive priority allocation.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt trade-pricing-section" id="trade-pricing">
+        <div class="container">
+          <div class="section-narrow trade-pricing-intro">
+            <h2>Request Trade Pricing</h2>
+            <p>Share your venue details below and we will send availability, pricing, and launch allocation options.</p>
+          </div>
+
+          <form class="trade-form trade-form-advanced" action="#" method="post">
+            <div class="trade-form-grid">
+              <div class="field-group">
+                <label for="trade-venue-name">Venue Name</label>
+                <input id="trade-venue-name" name="venue-name" type="text" required />
+              </div>
+
+              <div class="field-group">
+                <label for="trade-contact-name">Contact Name</label>
+                <input id="trade-contact-name" name="contact-name" type="text" required />
+              </div>
+
+              <div class="field-group">
+                <label for="trade-email">Email</label>
+                <input id="trade-email" name="email" type="email" required />
+              </div>
+
+              <div class="field-group">
+                <label for="trade-phone">Phone Number</label>
+                <input id="trade-phone" name="phone" type="tel" />
+              </div>
+
+              <div class="field-group">
+                <label for="trade-city">City</label>
+                <input id="trade-city" name="city" type="text" />
+              </div>
+
+              <div class="field-group">
+                <label for="trade-venue-type">Venue Type</label>
+                <input id="trade-venue-type" name="venue-type" type="text" />
+              </div>
+
+              <div class="field-group">
+                <label for="trade-monthly-cases">Estimated Monthly Cases</label>
+                <input id="trade-monthly-cases" name="estimated-monthly-cases" type="number" min="0" />
+              </div>
+
+              <div class="field-group field-group-full">
+                <label for="trade-message">Message / Notes</label>
+                <textarea id="trade-message" name="message" rows="5"></textarea>
+              </div>
+            </div>
+
+            <button class="cta section-cta" type="submit">Submit Trade Enquiry</button>
+          </form>
+
+          <div class="trade-direct-contact">
+            <p class="trade-direct-title">Prefer to contact us directly?</p>
+            <p><strong>Email:</strong> <a href="mailto:yumebrewingco@gmail.com">yumebrewingco@gmail.com</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/yumebrewery" target="_blank" rel="noopener noreferrer">@yumebrewery</a></p>
+          </div>
         </div>
       </section>
     </main>
