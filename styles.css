@@ -903,6 +903,20 @@ main > .section:nth-of-type(3n) .trade-points {
   margin-top: 0.35rem;
 }
 
+.contact-card a {
+  display: inline-block;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .moments-section {
     padding: 72px 0;
@@ -919,6 +933,25 @@ main > .section:nth-of-type(3n) .trade-points {
 
   .stock-yume-layout {
     margin-top: 1.25rem;
+  }
+
+  .contact-page-hero {
+    padding-top: clamp(5.6rem, 14vw, 6.6rem);
+  }
+
+  .contact-cards-grid {
+    gap: 1rem;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: none;
+    padding: 1.25rem;
+    overflow: hidden;
+  }
+
+  .contact-card p {
+    margin-top: 0.6rem;
   }
 
   .why-stock-grid,
