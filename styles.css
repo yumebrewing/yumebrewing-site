@@ -939,7 +939,13 @@ main > .section:nth-of-type(3n) .trade-points {
     padding-top: clamp(5.6rem, 14vw, 6.6rem);
   }
 
+  .contact-cards-section {
+    padding-bottom: 5.5rem;
+  }
+
   .contact-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
@@ -950,8 +956,20 @@ main > .section:nth-of-type(3n) .trade-points {
     overflow: hidden;
   }
 
+  .contact-card h2 {
+    font-size: clamp(1.2rem, 5.2vw, 1.5rem);
+    margin-bottom: 0.5rem;
+  }
+
   .contact-card p {
     margin-top: 0.6rem;
+  }
+
+  .contact-card a {
+    font-size: 0.92rem;
+    line-height: 1.35;
+    word-break: break-word;
+    overflow-wrap: anywhere;
   }
 
   .why-stock-grid,
