@@ -421,6 +421,20 @@ body.site-ready .hero-content .hero-cta {
   margin: 0;
 }
 
+.beer-dark-section {
+  background: var(--navy);
+}
+
+.beer-dark-section h2,
+.beer-dark-section p,
+.beer-dark-section .quick-facts {
+  color: var(--sand);
+}
+
+.beer-dark-section .content-placeholder p {
+  color: rgba(8, 58, 79, 0.88);
+}
+
 .flavour-profile-grid {
   margin-top: 1.35rem;
   display: grid;
