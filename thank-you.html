@@ -19,6 +19,14 @@
 <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512.png">
 
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-24Z01V6N67"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-24Z01V6N67');
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
@@ -194,6 +202,16 @@
         message.textContent = "You must be 18 or older to enter this site.";
       });
     })();
+  </script>
+  <script>
+    window.addEventListener("load", function () {
+      if (typeof window.gtag !== "function") return;
+      window.gtag("event", "trade_enquiry", {
+        page_location: window.location.href,
+        page_referrer: document.referrer || "",
+        form_name: "trade_enquiry_form"
+      });
+    });
   </script>
 </body>
 </html>
