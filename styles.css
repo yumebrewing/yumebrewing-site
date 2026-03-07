@@ -213,8 +213,8 @@ body.age-locked .floating-stock-cta {
   font-size: clamp(2rem, 4.5vw, 3.6rem);
   line-height: 1.1;
   font-weight: 700;
-  color: var(--sand);
-  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  color: #F5F1E8;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
 .hero h2,
@@ -223,8 +223,8 @@ body.age-locked .floating-stock-cta {
   font-size: clamp(1.2rem, 2.25vw, 1.85rem);
   line-height: 1.2;
   font-weight: 600;
-  color: #efe4d4;
-  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.38);
+  color: #F5F1E8;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
 .hero p,
@@ -232,8 +232,8 @@ body.age-locked .floating-stock-cta {
   margin-bottom: 1.5rem;
   font-size: clamp(0.98rem, 1.28vw, 1.12rem);
   line-height: 1.5;
-  color: #f1e7d8;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.34);
+  color: #F5F1E8;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 body:not(.site-ready) .hero {
