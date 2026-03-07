@@ -15,6 +15,8 @@
   --text-soft: #c0d5d6;
   --sand: #e5e1dd;
   --aqua: #c0d5d6;
+  --aqua-rgb: 192, 213, 214;
+  --sand-rgb: 229, 225, 221;
   --navy: #083a4f;
   --teal: #407e8c;
   --gold: #a58d66;
@@ -317,6 +319,26 @@ body.site-ready .hero-content .hero-cta {
   color: var(--text-soft);
 }
 
+.about-page-hero {
+  background:
+    linear-gradient(
+      rgba(var(--sand-rgb), 0.74),
+      rgba(var(--sand-rgb), 0.74)
+    ),
+    url("images/about-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-page-hero .page-kicker {
+  color: var(--gold);
+}
+
+.about-page-hero h1,
+.about-page-hero p {
+  color: var(--navy);
+}
+
 .trade-page-hero h2 {
   margin: 0 0 1rem;
   font-size: clamp(1.18rem, 2.2vw, 1.55rem);
@@ -486,11 +508,22 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
 }
 
 .section-alt {
-  background: rgba(192, 213, 214, 0.92);
+  background: rgba(var(--aqua-rgb), 0.92);
 }
 
-main > .section:nth-of-type(3n) {
+main > .section:nth-of-type(6n + 1),
+main > .section:nth-of-type(6n + 4) {
+  background: rgba(var(--aqua-rgb), 0.92);
+}
+
+main > .section:nth-of-type(6n + 2),
+main > .section:nth-of-type(6n + 5) {
   background: var(--navy);
+}
+
+main > .section:nth-of-type(6n + 3),
+main > .section:nth-of-type(6n + 6) {
+  background: var(--sand);
 }
 
 .section h2 {
@@ -540,10 +573,14 @@ main > .section:nth-of-type(3n) {
   color: rgba(8, 58, 79, 0.9);
 }
 
-main > .section:nth-of-type(3n) h2,
-main > .section:nth-of-type(3n) p,
-main > .section:nth-of-type(3n) .quick-facts,
-main > .section:nth-of-type(3n) .trade-points {
+main > .section:nth-of-type(6n + 2) h2,
+main > .section:nth-of-type(6n + 2) p,
+main > .section:nth-of-type(6n + 2) .quick-facts,
+main > .section:nth-of-type(6n + 2) .trade-points,
+main > .section:nth-of-type(6n + 5) h2,
+main > .section:nth-of-type(6n + 5) p,
+main > .section:nth-of-type(6n + 5) .quick-facts,
+main > .section:nth-of-type(6n + 5) .trade-points {
   color: var(--sand);
 }
 
