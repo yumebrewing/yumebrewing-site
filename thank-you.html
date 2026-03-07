@@ -189,11 +189,9 @@
         }
 
         if (isAdult(month, year)) {
-          if (rememberInput.checked) {
-            try {
-              localStorage.setItem(key, "true");
-            } catch (error) {
-            }
+          try {
+            localStorage.setItem(key, "true");
+          } catch (error) {
           }
           unlockSite();
           return;
