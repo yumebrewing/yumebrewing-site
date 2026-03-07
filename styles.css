@@ -174,11 +174,9 @@ body.age-locked .floating-stock-cta {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    circle at center,
-    rgba(8, 58, 79, 0.12) 0%,
-    rgba(8, 58, 79, 0.3) 55%,
-    rgba(8, 58, 79, 0.52) 100%
+  background: linear-gradient(
+    rgba(var(--sand-rgb), 0.7),
+    rgba(var(--sand-rgb), 0.7)
   );
   pointer-events: none;
 }
@@ -187,7 +185,7 @@ body.age-locked .floating-stock-cta {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(8, 58, 79, 0.14);
+  background: rgba(0, 0, 0, 0.18);
   pointer-events: none;
 }
 
@@ -457,6 +455,10 @@ body.site-ready .hero-content .hero-cta {
   color: rgba(8, 58, 79, 0.88);
 }
 
+.section-navy .content-placeholder p {
+  color: rgba(8, 58, 79, 0.88);
+}
+
 .flavour-profile-grid {
   margin-top: 1.35rem;
   display: grid;
@@ -511,18 +513,16 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
   background: rgba(var(--aqua-rgb), 0.92);
 }
 
-main > .section:nth-of-type(6n + 1),
-main > .section:nth-of-type(6n + 4) {
+.section-aqua {
   background: rgba(var(--aqua-rgb), 0.92);
 }
 
-main > .section:nth-of-type(6n + 2),
-main > .section:nth-of-type(6n + 5) {
+.section-navy,
+.beer-dark-section {
   background: var(--navy);
 }
 
-main > .section:nth-of-type(6n + 3),
-main > .section:nth-of-type(6n + 6) {
+.section-sand {
   background: var(--sand);
 }
 
@@ -573,14 +573,10 @@ main > .section:nth-of-type(6n + 6) {
   color: rgba(8, 58, 79, 0.9);
 }
 
-main > .section:nth-of-type(6n + 2) h2,
-main > .section:nth-of-type(6n + 2) p,
-main > .section:nth-of-type(6n + 2) .quick-facts,
-main > .section:nth-of-type(6n + 2) .trade-points,
-main > .section:nth-of-type(6n + 5) h2,
-main > .section:nth-of-type(6n + 5) p,
-main > .section:nth-of-type(6n + 5) .quick-facts,
-main > .section:nth-of-type(6n + 5) .trade-points {
+.section-navy h2,
+.section-navy p,
+.section-navy .quick-facts,
+.section-navy .trade-points {
   color: var(--sand);
 }
 
@@ -709,7 +705,6 @@ main > .section:nth-of-type(6n + 5) .trade-points {
 .launch-venues-section {
   padding: 84px 0;
   text-align: center;
-  background: var(--sand);
 }
 
 .launch-venues-section h2 {
@@ -726,6 +721,11 @@ main > .section:nth-of-type(6n + 5) .trade-points {
   font-size: clamp(1.02rem, 1.55vw, 1.18rem);
   line-height: 1.6;
   color: rgba(8, 58, 79, 0.88);
+}
+
+.launch-venues-section.section-navy h2,
+.launch-venues-section.section-navy p {
+  color: var(--sand);
 }
 
 .launch-venues-section p + p {
