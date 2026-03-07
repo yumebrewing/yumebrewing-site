@@ -322,8 +322,8 @@ body.site-ready .hero-content .hero-cta {
 .about-page-hero {
   background:
     linear-gradient(
-      rgba(var(--sand-rgb), 0.74),
-      rgba(var(--sand-rgb), 0.74)
+      rgba(var(--aqua-rgb), 0.74),
+      rgba(var(--aqua-rgb), 0.74)
     ),
     url("images/about-hero.jpg");
   background-size: cover;
