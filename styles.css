@@ -1354,6 +1354,26 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
     overflow: hidden;
   }
 
+  .section-aqua {
+    background: rgba(var(--aqua-rgb), 0.92);
+  }
+
+  .section-navy,
+  .beer-dark-section {
+    background: var(--navy);
+  }
+
+  .section-sand {
+    background: var(--sand);
+  }
+
+  .section-navy h2,
+  .section-navy p,
+  .section-navy .quick-facts,
+  .section-navy .trade-points {
+    color: var(--sand);
+  }
+
   .hero-content {
     max-width: min(88vw, 44rem);
   }
