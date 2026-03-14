@@ -340,23 +340,23 @@ body.site-ready .hero-content .hero-cta {
 }
 
 .about-our-story {
-  background-color: var(--sand);
+  background: var(--sand);
 }
 
 .about-meaning {
-  background-color: var(--aqua);
+  background: var(--aqua);
 }
 
 .about-philosophy {
-  background-color: var(--teal);
+  background: var(--teal);
 }
 
 .about-founder {
-  background-color: var(--navy);
+  background: var(--navy);
 }
 
 .about-next-step {
-  background-color: var(--sand);
+  background: var(--sand);
 }
 
 .about-page .about-philosophy h2,
@@ -364,6 +364,11 @@ body.site-ready .hero-content .hero-cta {
 .about-page .about-founder h2,
 .about-page .about-founder p {
   color: var(--sand);
+}
+
+.about-page .about-philosophy .cta,
+.about-page .about-founder .cta {
+  color: var(--navy);
 }
 
 .about-page .page-hero h1 {
@@ -1437,6 +1442,29 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
   .section-navy p,
   .section-navy .quick-facts,
   .section-navy .trade-points {
+    color: var(--sand);
+  }
+
+  .about-page .about-meaning {
+    background: var(--aqua);
+  }
+
+  .about-page .about-philosophy {
+    background: var(--teal);
+  }
+
+  .about-page .about-founder {
+    background: var(--navy);
+  }
+
+  .about-page .about-next-step {
+    background: var(--sand);
+  }
+
+  .about-page .about-philosophy h2,
+  .about-page .about-philosophy p,
+  .about-page .about-founder h2,
+  .about-page .about-founder p {
     color: var(--sand);
   }
 
