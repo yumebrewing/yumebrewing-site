@@ -322,8 +322,8 @@ body.site-ready .hero-content .hero-cta {
   padding-bottom: 84px;
   background:
     linear-gradient(
-      rgba(var(--aqua-rgb), 0.66),
-      rgba(var(--aqua-rgb), 0.66)
+      rgba(var(--sand-rgb), 0.78),
+      rgba(var(--sand-rgb), 0.78)
     ),
     url("images/about-hero.jpg");
   background-size: cover;
@@ -337,6 +337,33 @@ body.site-ready .hero-content .hero-cta {
 .about-page-hero h1,
 .about-page-hero p {
   color: var(--navy);
+}
+
+.about-our-story {
+  background-color: var(--sand);
+}
+
+.about-meaning {
+  background-color: var(--aqua);
+}
+
+.about-philosophy {
+  background-color: var(--teal);
+}
+
+.about-founder {
+  background-color: var(--navy);
+}
+
+.about-next-step {
+  background-color: var(--sand);
+}
+
+.about-page .about-philosophy h2,
+.about-page .about-philosophy p,
+.about-page .about-founder h2,
+.about-page .about-founder p {
+  color: var(--sand);
 }
 
 .about-page .page-hero h1 {
