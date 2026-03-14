@@ -318,8 +318,8 @@ body.site-ready .hero-content .hero-cta {
 }
 
 .about-page-hero {
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background:
     linear-gradient(
       rgba(var(--aqua-rgb), 0.66),
@@ -340,11 +340,11 @@ body.site-ready .hero-content .hero-cta {
 }
 
 .about-page .page-hero h1 {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.68rem;
 }
 
 .about-page .section h2 {
-  margin-bottom: 0.72rem;
+  margin-bottom: 0.64rem;
 }
 
 .about-page .page-hero h1 + p,
@@ -354,14 +354,14 @@ body.site-ready .hero-content .hero-cta {
 
 .about-page .page-hero p + p,
 .about-page .section p + p {
-  margin-top: 0.78rem;
+  margin-top: 0.72rem;
 }
 
 .about-divider {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.9rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   background: var(--sand);
 }
 
@@ -1499,12 +1499,12 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
   }
 
   .about-page-hero {
-    padding-top: clamp(4.75rem, 14vw, 5.75rem);
-    padding-bottom: clamp(3.25rem, 10vw, 4.25rem);
+    padding-top: clamp(4.4rem, 13vw, 5.25rem);
+    padding-bottom: clamp(3.05rem, 9vw, 3.9rem);
   }
 
   .about-divider {
-    padding-block: 0.7rem;
+    padding-block: 0.62rem;
   }
 
   .beer-hero {
