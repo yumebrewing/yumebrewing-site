@@ -318,8 +318,8 @@ body.site-ready .hero-content .hero-cta {
 }
 
 .about-page-hero {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 88px;
+  padding-bottom: 88px;
   background:
     linear-gradient(
       rgba(var(--aqua-rgb), 0.74),
@@ -1462,8 +1462,8 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
   }
 
   .about-page-hero {
-    padding-top: clamp(5.5rem, 18vw, 7rem);
-    padding-bottom: clamp(4rem, 12vw, 5.5rem);
+    padding-top: clamp(4.75rem, 14vw, 5.75rem);
+    padding-bottom: clamp(3.25rem, 10vw, 4.25rem);
   }
 
   .beer-hero {
