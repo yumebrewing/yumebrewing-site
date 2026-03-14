@@ -318,6 +318,8 @@ body.site-ready .hero-content .hero-cta {
 }
 
 .about-page-hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background:
     linear-gradient(
       rgba(var(--aqua-rgb), 0.74),
@@ -1457,6 +1459,11 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
     justify-content: center;
     align-items: center;
     padding-block: 2.25rem 1.5rem;
+  }
+
+  .about-page-hero {
+    padding-top: clamp(5.5rem, 18vw, 7rem);
+    padding-bottom: clamp(4rem, 12vw, 5.5rem);
   }
 
   .beer-hero {
