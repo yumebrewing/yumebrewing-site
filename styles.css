@@ -339,6 +339,25 @@ body.site-ready .hero-content .hero-cta {
   color: var(--navy);
 }
 
+.about-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem 1.5rem;
+  background: var(--sand);
+}
+
+.about-divider-mark {
+  width: clamp(3.25rem, 8vw, 4.5rem);
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(165, 141, 102, 0),
+    rgba(165, 141, 102, 0.75),
+    rgba(165, 141, 102, 0)
+  );
+}
+
 .trade-page-hero h2 {
   margin: 0 0 1rem;
   font-size: clamp(1.18rem, 2.2vw, 1.55rem);
@@ -1464,6 +1483,10 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
   .about-page-hero {
     padding-top: clamp(4.75rem, 14vw, 5.75rem);
     padding-bottom: clamp(3.25rem, 10vw, 4.25rem);
+  }
+
+  .about-divider {
+    padding-block: 0.7rem;
   }
 
   .beer-hero {
