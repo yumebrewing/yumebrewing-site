@@ -430,6 +430,7 @@ body.site-ready .hero-content .hero-cta {
   font-weight: 600;
   letter-spacing: 0.05em;
   line-height: 1.2;
+  color: var(--gold);
 }
 
 .pillar p {
