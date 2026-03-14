@@ -339,6 +339,24 @@ body.site-ready .hero-content .hero-cta {
   color: var(--navy);
 }
 
+.about-page .page-hero h1 {
+  margin-bottom: 0.75rem;
+}
+
+.about-page .section h2 {
+  margin-bottom: 0.72rem;
+}
+
+.about-page .page-hero h1 + p,
+.about-page .section h2 + p {
+  margin-top: 0;
+}
+
+.about-page .page-hero p + p,
+.about-page .section p + p {
+  margin-top: 0.78rem;
+}
+
 .about-divider {
   display: flex;
   justify-content: center;
