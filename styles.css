@@ -322,8 +322,8 @@ body.site-ready .hero-content .hero-cta {
   padding-bottom: 88px;
   background:
     linear-gradient(
-      rgba(var(--aqua-rgb), 0.74),
-      rgba(var(--aqua-rgb), 0.74)
+      rgba(var(--aqua-rgb), 0.66),
+      rgba(var(--aqua-rgb), 0.66)
     ),
     url("images/about-hero.jpg");
   background-size: cover;
@@ -512,7 +512,7 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
 }
 
 .section-alt {
-  background: rgba(var(--aqua-rgb), 0.92);
+  background: rgba(var(--aqua-rgb), 0.72);
 }
 
 .section-aqua {
