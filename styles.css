@@ -408,6 +408,26 @@ body.site-ready .hero-content .hero-cta {
   );
 }
 
+.brand-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.pillar h4 {
+  margin: 0 0 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.pillar p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
 .trade-page-hero h2 {
   margin: 0 0 1rem;
   font-size: clamp(1.18rem, 2.2vw, 1.55rem);
@@ -1466,6 +1486,11 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
   .about-page .about-founder h2,
   .about-page .about-founder p {
     color: var(--sand);
+  }
+
+  .brand-pillars {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .hero-content {
