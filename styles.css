@@ -244,10 +244,10 @@ body.age-locked .floating-stock-cta {
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1600px) {
   .hero {
-    background-size: 112%;
-    background-position: center calc(27% + var(--hero-parallax-offset, 0px));
+    background-size: 104%;
+    background-position: center calc(28% + var(--hero-parallax-offset, 0px));
   }
 
   .hero-content {
