@@ -708,6 +708,7 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
 
 .about-yume-section {
   min-height: auto;
+  width: 100%;
 }
 
 .about-yume-grid {
@@ -726,6 +727,9 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
 }
 
 .about-yume-visual {
+  width: 100%;
+  max-width: 32rem;
+  margin-inline: auto;
   aspect-ratio: 4 / 3;
   border: 1px solid rgba(64, 126, 140, 0.35);
   border-radius: 8px;
@@ -760,14 +764,19 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
   margin-top: 1.25rem;
 }
 
-.why-yuzu-visual {
+.why-yuzu-visual,
+.yuzu-image {
+  width: 100%;
+  max-width: 32rem;
+  margin-inline: auto;
   border: 1px solid rgba(64, 126, 140, 0.35);
   border-radius: 12px;
   overflow: hidden;
   aspect-ratio: 4 / 3;
 }
 
-.why-yuzu-image {
+.why-yuzu-image,
+.yuzu-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -776,6 +785,7 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
 }
 
 .moments-section {
+  width: 100%;
   padding: 100px 0;
 }
 
@@ -795,6 +805,8 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
 
 .moments-image {
   width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -807,6 +819,7 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
 }
 
 .launch-venues-section {
+  width: 100%;
   padding: 84px 0;
   text-align: center;
 }
