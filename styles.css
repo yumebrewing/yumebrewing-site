@@ -83,7 +83,7 @@ img {
 }
 
 .brand {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 14px;
   color: var(--antique-brass);
@@ -98,11 +98,12 @@ img {
 }
 
 .brand-logo {
-  height: 44px;
+  height: 48px;
   width: auto;
   flex: 0 0 auto;
   display: block;
-  transform: translateY(-3px);
+  position: relative;
+  top: 2px;
 }
 
 .brand-text {
