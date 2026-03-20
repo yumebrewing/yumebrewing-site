@@ -200,6 +200,55 @@ body.age-locked .floating-stock-cta {
   text-align: center;
 }
 
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+    padding-inline: clamp(1.5rem, 3vw, 2.75rem);
+  }
+
+  .nav-inner {
+    gap: 1.5rem;
+  }
+
+  .brand {
+    flex: 0 0 auto;
+  }
+
+  .top-nav nav {
+    margin-left: auto;
+  }
+
+  .hero {
+    min-height: 100svh;
+    align-items: center;
+    padding-block: clamp(3.5rem, 8vh, 5.5rem) clamp(1.75rem, 4vh, 3rem);
+    background-size: contain;
+    background-position: center calc(50% - 18px + var(--hero-parallax-offset, 0px));
+    background-repeat: no-repeat;
+  }
+
+  .hero-content {
+    max-width: 46rem;
+    margin: 0 auto;
+    transform: translateY(-1.5rem);
+  }
+}
+
+@media (min-width: 1680px) {
+  .container {
+    max-width: 1380px;
+  }
+
+  .hero {
+    background-size: min(100%, 1840px) auto;
+    background-position: center calc(50% - 24px + var(--hero-parallax-offset, 0px));
+  }
+
+  .hero-content {
+    transform: translateY(-2.35rem);
+  }
+}
+
 .hero h1,
 .hero h2,
 .hero p {
