@@ -263,6 +263,10 @@ body.age-locked .floating-stock-cta {
 }
 
 @media (min-width: 1600px) {
+  .brand-logo {
+    top: 1px;
+  }
+
   .hero {
     background-size: 104%;
     background-position: center calc(28% + var(--hero-parallax-offset, 0px));
