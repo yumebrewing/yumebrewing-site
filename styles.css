@@ -222,9 +222,8 @@ body.age-locked .floating-stock-cta {
     min-height: 100svh;
     align-items: center;
     padding-block: clamp(3.5rem, 8vh, 5.5rem) clamp(1.75rem, 4vh, 3rem);
-    background-size: contain;
-    background-position: center calc(50% - 18px + var(--hero-parallax-offset, 0px));
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center calc(30% + var(--hero-parallax-offset, 0px));
   }
 
   .hero-content {
@@ -240,8 +239,15 @@ body.age-locked .floating-stock-cta {
   }
 
   .hero {
-    background-size: min(100%, 1840px) auto;
-    background-position: center calc(50% - 24px + var(--hero-parallax-offset, 0px));
+    background-size: cover;
+    background-position: center calc(28% + var(--hero-parallax-offset, 0px));
+  }
+}
+
+@media (min-width: 1800px) {
+  .hero {
+    background-size: 112%;
+    background-position: center calc(27% + var(--hero-parallax-offset, 0px));
   }
 
   .hero-content {
