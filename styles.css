@@ -83,6 +83,9 @@ img {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: var(--antique-brass);
   font-family: var(--display-font);
   font-size: clamp(1.18rem, 1.6vw, 1.5rem);
@@ -92,6 +95,17 @@ img {
   line-height: 1.05;
   text-wrap: balance;
   text-rendering: geometricPrecision;
+}
+
+.brand-logo {
+  height: 20px;
+  width: auto;
+  flex: 0 0 auto;
+  display: block;
+}
+
+.brand-text {
+  display: block;
 }
 
 .top-nav nav {
