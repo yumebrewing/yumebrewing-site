@@ -1288,6 +1288,22 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
   opacity: 1;
 }
 
+.footer-disclaimer {
+  margin-top: 0.65rem;
+  text-align: center;
+}
+
+.footer-disclaimer p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #E5E1DD;
+  opacity: 0.72;
+  max-width: 68ch;
+  margin-inline: auto;
+  text-wrap: pretty;
+}
+
 .age-gate {
   position: fixed;
   inset: 0;
@@ -1657,6 +1673,15 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
   .footer-legal {
     display: grid;
     gap: 0.25rem;
+  }
+
+  .footer-disclaimer {
+    margin-top: 0.75rem;
+  }
+
+  .footer-disclaimer p {
+    font-size: 0.78rem;
+    max-width: 42ch;
   }
 
   .footer-grid {
