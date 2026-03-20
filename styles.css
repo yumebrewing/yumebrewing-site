@@ -842,16 +842,9 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
   max-width: 36.5rem;
   margin-inline: auto;
   align-self: center;
-  border: 1px solid rgba(64, 126, 140, 0.14);
   border-radius: 18px;
   overflow: hidden;
   aspect-ratio: 1.08 / 1;
-  background: linear-gradient(
-    180deg,
-    rgba(229, 225, 221, 0.7),
-    rgba(229, 225, 221, 0.38)
-  );
-  box-shadow: 0 14px 30px rgba(8, 58, 79, 0.07);
 }
 
 .why-yuzu-image,
