@@ -85,7 +85,7 @@ img {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   color: var(--antique-brass);
   font-family: var(--display-font);
   font-size: clamp(1.18rem, 1.6vw, 1.5rem);
@@ -98,11 +98,11 @@ img {
 }
 
 .brand-logo {
-  height: 36px;
+  height: 44px;
   width: auto;
   flex: 0 0 auto;
   display: block;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .brand-text {
