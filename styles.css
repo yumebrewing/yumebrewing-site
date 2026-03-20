@@ -754,6 +754,21 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
 
 .why-yuzu-grid {
   align-items: center;
+  gap: clamp(2rem, 4.5vw, 4rem);
+}
+
+.why-yuzu-section {
+  min-height: auto;
+  padding-block: clamp(4rem, 8vw, 6rem);
+}
+
+.why-yuzu-copy {
+  display: grid;
+  align-content: center;
+}
+
+.why-yuzu-copy > * {
+  max-width: 34rem;
 }
 
 .why-yuzu-grid p + p {
@@ -767,12 +782,14 @@ body.scroll-anim-ready .site-footer:not(.in-view) {
 .why-yuzu-visual,
 .yuzu-image {
   width: 100%;
-  max-width: 32rem;
+  max-width: 35rem;
   margin-inline: auto;
-  border: 1px solid rgba(64, 126, 140, 0.35);
-  border-radius: 12px;
+  border: 1px solid rgba(64, 126, 140, 0.18);
+  border-radius: 14px;
   overflow: hidden;
   aspect-ratio: 4 / 3;
+  background: rgba(229, 225, 221, 0.4);
+  box-shadow: 0 18px 40px rgba(8, 58, 79, 0.08);
 }
 
 .why-yuzu-image,
