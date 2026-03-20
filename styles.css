@@ -339,24 +339,24 @@ body.site-ready .hero-content .hero-cta {
   color: var(--navy);
 }
 
-.about-our-story {
-  background: var(--sand);
+.about-page .about-our-story {
+  background-color: var(--sand);
 }
 
-.about-meaning {
-  background: var(--aqua);
+.about-page .about-meaning {
+  background-color: var(--aqua);
 }
 
-.about-philosophy {
-  background: var(--teal);
+.about-page .about-philosophy {
+  background-color: var(--teal);
 }
 
-.about-founder {
-  background: var(--navy);
+.about-page .about-founder {
+  background-color: var(--navy);
 }
 
-.about-next-step {
-  background: var(--sand);
+.about-page .about-next-step {
+  background-color: var(--sand);
 }
 
 .about-page .about-philosophy h2,
